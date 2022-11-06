@@ -1,0 +1,79 @@
+:root {
+    --header-bg: #eed7a1;
+    --header-color: #475c6c;
+    --side-bg: #cd8b62;
+    --side-color:#475c6c; 
+    --bg:#475c6c;
+    --color: rgb(250, 83, 0);
+    --header-color: #475c6c;
+    --font: 'Calibri';
+}
+
+*{
+    font-family:var(--font);
+}
+
+header{
+    background-color: var(--header-bg);
+    color: var(--header-color);
+    display: flex;
+}
+
+name{
+    font-size:300%;
+    text-align: Left;
+}
+
+nav{
+    display:flex;
+    flex: 1 1;
+    justify-content: space-around;
+    margin: 5px 5%;
+    align-items: flex-end;
+    font-size: 120%;
+}
+
+container{
+    display: flex;
+    flex-direction: row-reverse;
+}
+main{
+    background-color: var(--bg);
+    color: var(--color);
+    display: flex;
+    flex-direction: column;
+    width:80%;
+}
+
+section{
+
+}
+
+section h1{
+    text-align: center;
+    font-size: 200%;
+}
+
+section p{
+    text-indent: 5%;
+    margin: 0 5%;
+}
+
+aside{
+    background-color: var(--side-bg);
+    color: var(--side-color);
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+aside h1{
+
+}
+
+aside nav{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: flex-start;
+}
