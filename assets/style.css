@@ -2,7 +2,8 @@
     --header-bg: #eed7a1;
     --header-color: #475c6c;
     --side-bg: #cd8b62;
-    --side-color:#475c6c; 
+    /* --side-color:#475c6c;  */
+    --side-color:#556b2f;
     --bg:#475c6c;
     --color: rgb(250, 83, 0);
     --header-color: #475c6c;
@@ -13,15 +14,19 @@
     font-family:var(--font);
 }
 
+/* Start of Heading Styling */
 header{
     background-color: var(--header-bg);
     color: var(--header-color);
     display: flex;
+    justify-content:space-between;
 }
 
 name{
     font-size:300%;
     text-align: Left;
+    flex: 1 1;
+    flex-wrap: nowrap;
 }
 
 nav{
@@ -31,7 +36,10 @@ nav{
     margin: 5px 5%;
     align-items: flex-end;
     font-size: 120%;
+    flex-wrap: nowrap;
 }
+
+/* Start of Container Styling */
 
 container{
     display: flex;
@@ -45,35 +53,175 @@ main{
     width:80%;
 }
 
+.hero {
+    height: 40%;
+    width: 40%;
+    margin: 0 auto;
+    background-image: url("./assets.IMG_2463.jpg");
+    background-size: cover;
+    background-position: center;
+    z-index: 2;
+}
+
+/* Start of About Me Styling */
 section{
+    margin: 5%;
+    border: 3px var(--color) dashed;
+    padding: 0 5% 5% 5%;
+    border-radius: 35%;
 
 }
 
 section h1{
     text-align: center;
     font-size: 200%;
+    margin: 5% 0;
 }
 
 section p{
     text-indent: 5%;
     margin: 0 5%;
+    font-size: medium;
 }
 
+/* Start of Projects Styling */
+
+projects{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+}
+
+.rounded-box{
+    box-sizing: border-box;
+    margin: 0 3% 8% 3%;
+    border: 3px var(--color) dashed;
+    padding: 0 5% 5% 5%;
+    border-radius: 20px;}
+
+.sub-heading-box{
+    font-size:200%;
+    border: 3px var(--color) dashed;
+    box-sizing: border-box;
+    border-radius:10px;
+    text-align: center;
+    margin: -10% 0 0 -10%;
+    padding: 1%;
+    z-index: 1;
+    background-color: var(--header-bg);
+
+
+}
+
+star{
+    justify-content: center;
+    align-items: center;
+    height:500px;
+}
+star img{
+    width:100%;    
+}
+
+star h2{
+    position:relative;
+    bottom:10%;
+    width:40%;
+    height:20%;
+    font-size:200%;
+    border: 3px var(--color) dashed;
+    box-sizing: border-box;
+    border-radius:10px;
+    text-align: center;
+    padding: 2.5% 0;
+    z-index: 1;
+    background-color: var(--header-bg);
+}
+
+.text-image{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1;
+}
+
+subcon{
+    display:flex;
+    flex-wrap: wrap;
+
+}
+sub{
+    flex: 1 1 40%;
+    height:300px;
+    justify-content: center;
+    margin-top:60%;
+}
+
+sub h2{
+    position:relative;
+    bottom:10%;
+    width:80%;
+    height:25%;
+    font-size:200%;
+    border: 3px var(--color) dashed;
+    box-sizing: border-box;
+    border-radius:10px;
+    text-align: center;
+    padding: 3% 0;
+    z-index: 1;
+    background-color: var(--header-bg);
+}
+
+
+/* Start of Projects Nav Bar Styling */
 aside{
     background-color: var(--side-bg);
     color: var(--side-color);
     display: flex;
     flex-direction: column;
+    flex:1 1;
+    justify-content: flex-start;
     width: 20%;
 }
 
 aside h1{
-
+    font-size:200% ;
 }
 
 aside nav{
     display: flex;
     flex-direction: column;
     list-style: none;
+    justify-content: flex-start;
     align-items: flex-start;
+    flex: 1 1;
 }
+
+aside nav li{
+    height:30px;
+}
+
+footer{
+    background-color: var(--bg);
+    color: var(--color);
+    text-align: center;
+}
+
+@media screen and (max-width:768px) {
+    container{
+        flex-direction: column-reverse;
+    }
+    main{
+        width:100%;
+    }
+    aside{
+        width: 100%;
+        text-align: center;
+    }
+    aside nav{
+        align-items: center;
+    }
+    sub{
+        flex: 1 1 100%;
+    }
+}
+
+    

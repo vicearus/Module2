@@ -14,49 +14,61 @@
     <header>
         <name>Armond's Portfolio</name>
         <nav>
-            <ul>About Me</ul>
-            <ul>GitHub</ul>
-            <ul>Contact Me</ul>
+            <ul>
+                <a href="#AboutMe"> About Me</a></ul>
+            <ul>
+                <a href="#GitHub">GitHub</a></ul>
+            <ul>
+                <a href="#ContactMe">Contact Me</a></ul>
         </nav>
     </header>
     
     <container>
     <main> 
-
+        
         <section>
-            <h1>About Me</h1>
+            <h1 id="AboutMe">About Me</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis consectetur pariatur, accusamus mollitia, animi odit modi, quis corrupti laborum error et recusandae laboriosam! Accusantium, quo a. Neque alias mollitia praesentium.</p>
         </section>
+        <img src="./assets/IMG_2463.jpg" class="hero">
 
         <projects>
 
-            <star>
-                <h2>Project Name</h2>
-                <p>This is my work</p>
-                <img>
+            <star id="p1" class="rounded-box">
+                <h2>Code Refactoring</h2>
+            <div class="text-image">
+                <p>In this application, code was refactored to improve readability and accessibility. Semantic elements and alt attributes were added to HTML, CSS styling was consolidated, and comments were added to clarify blocks of code.</p>
+                 <a href="https://vicearus.github.io/Module1/">
+                <img src="./assets/Horiseon.png" alt="Webpage screenshot">
+                </a>
+            </div>
             </star>
-            <sub>
-                <h2>Project Name</h2>
-                <p>This is my work</p>
+
+            <subcon>
+            <sub id="p2" class="rounded-box">
+                <h2>Project 2</h2>
+                <p>To be announced...</p>
                 <img>
             </sub>
-            <sub>
-                <h2>Project Name</h2>
-                <p>This is my work</p>
+            <sub id="p3" class="rounded-box">
+                <h2>Project 3</h2>
+                <p>To be announced...</p>
                 <img>
             </sub>
-            <sub>
-                <h2>Project Name</h2>
-                <p>This is my work</p>
+            <sub id="p4" class="rounded-box">
+                <h2>Project 4</h2>
+                <p>To be announced...</p>
                 <img>
             </sub>
-            <sub>
-                <h2>Project Name</h2>
-                <p>This is my work</p>
+            <sub id="p5" class="rounded-box">
+                <h2>Project 5</h2>
+                <p>To be announced...</p>
                 <img>
             </sub>
+            </subcon>
 
         </projects>
+
 
     </main>
 
@@ -64,19 +76,24 @@
         <h1>Projects</h1>
 
         <nav>
-            <li>Star</li>
-            <li>Sub1</li>
-            <li>Sub2</li>
-            <li>Sub3</li>
-            <li>Sub4</li>
+            <li>
+                <a href="#p1"> Project 1</a></li>
+            <li>
+                <a href="#p2"> Project 2</a></li>
+            <li>
+                <a href="#p3"> Project 3</a></li>
+            <li>
+                <a href="#p4"> Project 4</a></li>
+            <li>
+                <a href="#p5"> Project 5</a></li>
         </nav>
 
     </aside>
     </container>
 
     <footer>
-        <ul>Github: https://github.com/vicearus?tab=repositories </ul>
-        <ul>Email: ajvicenc@uci.edu </ul>
+        <ul id="GitHub">Github: https://github.com/vicearus?tab=repositories </ul>
+        <ul id="ContactMe">Email: ajvicenc@uci.edu </ul>
     </footer>
 
 </body>

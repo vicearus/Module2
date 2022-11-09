@@ -2,8 +2,8 @@
 
 Pseudocode
 
-This portfolio page will have a <header> section containing <title> and <nav>. 
-<header> will be a flex container for <title> and <nav>
+This portfolio page will have a <header> section containing <name> and <nav>. 
+<header> will be a flex container for <name> and <nav>
 <nav> will be a flex container for the following
 <ul> elements; About Me, GitHub, and Contact Me.
 
