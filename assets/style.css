@@ -119,7 +119,7 @@ star{
     height:500px;
 }
 star img{
-    width:100%;    
+    width:80%;    
 }
 
 star h2{
@@ -140,7 +140,8 @@ star h2{
 .text-image{
     display: flex;
     flex-direction: column;
-    flex: 1 1;
+    /* align-items: stretch; */
+    justify-content: stretch;
 }
 
 subcon{
@@ -221,6 +222,9 @@ footer{
     }
     sub{
         flex: 1 1 100%;
+    }
+    #pic{
+        width:100%;
     }
 }
 
