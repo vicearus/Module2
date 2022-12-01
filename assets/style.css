@@ -116,7 +116,6 @@ projects{
 star{
     justify-content: center;
     align-items: center;
-    height:500px;
 }
 star img{
     width:80%;    
@@ -126,17 +125,20 @@ star h2{
     position:relative;
     bottom:10%;
     width:40%;
-    height:20%;
+    height:15%;
     font-size:200%;
     border: 3px var(--color) dashed;
     box-sizing: border-box;
     border-radius:10px;
     text-align: center;
-    padding: 2.5% 0;
+    padding: 1% 0;
     z-index: 1;
     background-color: var(--header-bg);
 }
 
+star p{
+    margin: 2%;
+}
 .text-image{
     display: flex;
     flex-direction: column;
